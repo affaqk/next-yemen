@@ -1,6 +1,7 @@
 "use client"
 
 import axios from 'axios';
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 
 const Products = () => {
@@ -45,6 +46,7 @@ const Products = () => {
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products.map((product) => (
+            <Link href = {`/products/${product.id}`}>
             <div
               key={product.id}
               className="bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col overflow-hidden group"
@@ -93,6 +95,7 @@ const Products = () => {
                 </div>
               </div>
             </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -101,3 +104,11 @@ const Products = () => {
 }
 
 export default Products
+
+
+// <Routes>
+  // <Route path ="/product" element = {<Product/>}/>
+  // <Route path = "/products/:id" element = {<ProductDetail/>}/>
+// </Routes>
+
+// Link to = { /products/${product.id}}
