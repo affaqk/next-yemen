@@ -10,7 +10,6 @@ const getProductDetail = async (id) => {
     }
 }
 
-const { id } = usePrams()
 export default async function ProductDetail({ params }) {
     const { id } = await params;
     const product = await getProductDetail(id);

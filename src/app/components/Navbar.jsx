@@ -74,10 +74,10 @@ const Navbar = () => {
               <span className="absolute top-1 right-1 w-2 h-2 bg-emerald-400 rounded-full" />
             </Link>
             <Link
-              href="/products"
+              href="/login"
               className="ml-2 px-4 py-2 text-sm font-semibold text-gray-950 bg-emerald-400 hover:bg-emerald-300 rounded-lg transition-colors duration-200"
             >
-              Shop Now
+              Login
             </Link>
           </div>
 
@@ -151,11 +151,11 @@ const Navbar = () => {
         {/* Drawer Footer CTA */}
         <div className="px-5 py-5 border-t border-white/10">
           <Link
-            href="/products"
+            href="/login"
             onClick={() => setNav(false)}
             className="block w-full text-center py-3 text-sm font-semibold text-gray-950 bg-emerald-400 hover:bg-emerald-300 rounded-xl transition-colors duration-200"
           >
-            Shop Now
+            Login
           </Link>
         </div>
       </aside>
