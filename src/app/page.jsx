@@ -16,7 +16,7 @@ export default function Home() {
                 </div>
                 <div>
                     <Image src="/images/2.jpg" width={300} height={300} />
-                    <p className="legend">Legend 2</p>
+                  <p className="legend">Legend 2</p>
                 </div>
                 <div>
                     <Image src="/images/3.jpg" width={300} height={300}/>
